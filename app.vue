@@ -1,8 +1,17 @@
 <template>
-  <div class="bg-white py-24">
-    <div class="flex flex-col items-center">
-      <h1 class="text-6xl font-semibold text-blue-600">2022 iThome</h1>
-      <p class="mt-4 text-9xl font-bold text-gray-900">鐵人賽</p>
-    </div>
+  <div>
+    <ClientOnly fallback="網頁加載中">
+      <!-- [nuxt] Your project has layouts but the `<NuxtLayout />` component has not been used.  -->
+      <!-- This is an issue for nuxt 3.9 -->
+      <NuxtLayout name="default">
+        <div>
+          <NuxtLoadingIndicator />
+          <NuxtPage />
+        </div>
+      </NuxtLayout>
+      <template #fallback>
+        <p class="my-6 flex justify-center">[IronManWelcome] 載入中...</p>
+      </template>
+    </ClientOnly>
   </div>
 </template>
