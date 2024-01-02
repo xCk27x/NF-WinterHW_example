@@ -17,7 +17,4 @@
     }
     ```
 
-3. 在vscode中按下 **ctrl+,** 打開設定，搜尋 format on save 後勾選此設定
-  ![format on save](./assets/image.png)
-
-4. 關掉重開你的 Vscode，並確定你執行過 ```npm install```。之後當你按下 **ctrl+s** 儲存時，就會對你的檔案進行自動排版了
+3. 關掉重開你的 Vscode，並確定你執行過 ```npm install```。之後當你按下 **ctrl+s** 儲存時，就會對你的檔案進行自動排版了
